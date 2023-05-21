@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  :root{
+    --color_azul:blue;
+    --color_amarelo:yellow;
+    --color_vermelho:red;
+    --color_verde:green;
+    --color_roxo:rgb(165, 91, 233);
+  }
+  body{
+    background-color:var(--color_roxo);
+  }
+  table{
+    width: 350px;
+    height: 250px;
+    margin: auto;
+    border-spacing: 0;
+  }
+  #verde{
+    background-color: var(--color_verde);
+  }
+  #azul{
+    background-color: var(--color_azul);
+  }
+  #amarelo{
+    background-color: var(--color_amarelo);
+  }
+  #vermelho{
+    background-color: var(--color_vermelho);
+  }
+</style>
+<body>
+  <table id="table2">
+    <tr>
+      <td id="verde" colspan="3"></td>
+    </tr>
+    <tr>
+      <td id="azul"></td>
+      <td id="amarelo"></td>
+      <td id="vermelho"></td>
+    </tr>
+  </table>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula</title>
+    <style>
+        /* variavel para armazenar cor*/
+        :root{
+            --bg_table:#ffffff;
+            --bg_body:rgb(179, 179, 250);
+            --bg_border:rgb(39, 19, 112);
+            --bg_th:rgb(95, 52, 253);
+        }
+
+        body{
+            background-color:var(--bg_body);
+        }
+        table{
+            margin: auto;
+            text-align: center;
+            border-spacing: 0;
+            background-color: var(--bg_table);
+        }
+        table th, td{
+            
+            border: 1px solid var(--bg_border);
+        }
+        td, th{
+            max-width: 220px;
+            min-width: 120px;
+            min-height: 50px;
+        }
+        th{
+            background-color: var(--bg_th);
+            color: var(--bg_table);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>NOME</th>
+            <th>SOBRENOME</th>
+            <th>CIDADE</th>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>Silva</td>
+            <td>Belo Horizonte - MG</td>
+        </tr>
+        <tr>
+            <td>Isaura</td>
+            <td>Cunha</td>
+            <td>Goiania - GO</td>
+        </tr>
+        <tr>
+            <td>Leticia</td>
+            <td>Ferreira</td>
+            <td>Rocinha - RJ</td>
+        </tr>
+    </table>
+</body>
+</html>

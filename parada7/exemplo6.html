@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício</title>
+  <style>
+    :root{
+      --color_azul:blue;
+      --color_verde:green;
+      --color_vermelho:red;
+      --color_roxo:purple;
+    }
+
+    table{
+      width: 600px;
+      height: 400px;
+      margin: auto;
+      border-spacing: 0;
+    }
+    td, tr{
+      border: 1px solid black;
+    }
+    
+    #azul{
+      background-color: var(--color_azul);
+    }
+    #vermelho{
+      background-color: var(--color_vermelho);
+    }
+    #verde{
+      background-color: var(--color_verde);
+    }
+    #roxo{
+      background-color: var(--color_roxo);
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <td id="azul" colspan="2"></td>
+      <td id="vermelho" rowspan="2"></td>
+    </tr>
+
+    <tr>
+      <td id="verde"></td>
+      <td id="roxo"></td>
+      
+    </tr>
+  </table>
+</body>
+</html>
