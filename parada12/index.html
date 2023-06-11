@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplos DIV</title>
+
+  <style>
+    #box{
+      background-color: coral;
+      width:250px; /*max-content - deixar a div do tamanho do conteudo*/
+      line-height: 250px;/*permite centralizar a altura do conteudo*/
+      color: #fff;
+      text-align: center;
+      margin: auto;
+    }
+
+    .boxes{
+      width: 150px;
+      height: 150px;
+      margin: 10px;
+    }
+    .container{
+      display: flex; /*organiza as boxes na horizontal*/
+      border: 3px dashed #000;
+      width: max-content;
+    }
+    .red{
+      background-color: red;
+    }
+    .blue{
+      background-color: blue;
+    }
+    .green{
+      background-color: green;
+    }
+
+    .card{
+      width: 350px;
+      background-color: #fff;
+      padding: 10px;
+      text-align: justify;
+      margin: 10px;
+    }
+    .card img{
+      width: 100%;
+      border: 1px solid lightgray;
+    }
+    .container-box{
+      display: flex;
+      background-color: aqua;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="box">
+    Isso é uma div!
+  </div>
+
+  <div class="container">
+   <!-- colocar mais de uma classe na div -->
+    <div class="boxes red"></div>
+    <div class="boxes blue"></div>
+    <div class="boxes green"></div>
+
+  </div>
+
+
+  <div class="container-box">
+    <div class="card">
+      <h1>Super Nintendo</h1>
+
+      <img src="MicrosoftTeams-image (7).png">
+
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quod quae. Sequi numquam natus, eveniet asperiores dicta repellendus reiciendis quidem. Corporis quos illum deserunt minus illo quasi veniam harum in.</p>
+    </div>
+
+    <div class="card">
+      <h1>Mega Drive</h1>
+
+      <img src="MicrosoftTeams-image (4).png">
+
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quod quae. Sequi numquam natus, eveniet asperiores dicta repellendus reiciendis quidem. Corporis quos illum deserunt minus illo quasi veniam harum in.</p>
+    </div>
+
+  </div>
+</body>
+</html>
