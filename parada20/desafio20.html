@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media dos alunos</title>
+
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      
+      }
+      input {
+        margin-bottom: 10px;
+        text-align: center;
+      }
+    </style>
+
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Calcular Media </h1>
+    <input type="text" id="nome" placeholder="Nome do aluno" />
+    <input type="number" id="nota1" placeholder="primeiro trimestre" />
+    <input type="number" id="nota2" placeholder="segundo trimestre" />
+    <input type="number" id="nota3" placeholder="terceiro trimestre" />
+    <button onclick="calcular()">Calcular</button>
+
+  </body>
+</html>
