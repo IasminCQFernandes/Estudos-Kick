@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS</title>
+  </head>
+  <body>
+    <div id="resp"></div>
+
+    <input type="number" id="inputNum1" placeholder="Digite um número:" />
+
+    <input type="number" id="inputNum2" placeholder="Digite um número:" />
+    <button onclick="somar()">Calcular</button>
+
+    <script>
+      var nome = prompt("digite seu nome: ")
+
+      var text1 = `<h1> Olá ${nome}! Tudo bem com você?</h1>`
+      var text2 = "<h1> Olá " + nome + "! Tudo bem com você?</h1>"
+
+      document.getElementById("resp").innerHTML = text2
+
+      var n1 = prompt("digite um numero:")
+      var n2 = prompt("digite outro numero:")
+      var resp = n1 * n2
+      alert(resp)
+
+      function somar() {
+        var n1 = document.getElementById("inputNum1").value
+        var n2 = document.getElementById("inputNum2").value
+
+        var resposta = n1 + n2
+        alert(resposta)
+      }
+    </script>
+  </body>
+</html>
