@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo 03</title>
+</head>
+<body>
+  <div>
+    <ul id="lista"></ul>
+  </div>
+</body>
+<script>
+  let pessoa = {
+    nome: "João",
+    sobrenome: "Silva",
+    idade: 35,
+    altura: 1.82,
+    profissao: "professor"
+
+  }
+  function desenha_objeto() {
+    let ul = document.getElementById('lista')
+
+    for (let chave in pessoa) {
+      let li = document.createElement("li");
+      li.innerHTML = `<b>${chave}: </b> ${pessoa[chave]}`
+      ul.appendChild(li)
+    }
+  }
+  desenha_objeto()
+</script>
+</html>

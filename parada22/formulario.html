@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      form {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+      }
+      label {
+        text-align: center;
+        color: rgb(92, 92, 92);
+      }
+      input {
+        display: flex;
+        justify-content: end;
+        background-color: rgb(226, 226, 226);
+        border: none;
+        box-shadow: 2px 2px 2px rgb(182, 180, 180);
+      }
+      button {
+        width: 100%;
+        border: none;
+        color: #fff;
+        background-color: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Formulario</h1>
+    <form method="post">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <p>
+          <label for="idnome"> Nome: </label>
+          <input type="text" id="idnome" placeholder="Maria" required />
+        </p>
+        <p>
+          <label for="idsobrenome"> Sobrenome: </label>
+          <input type="text" id="idsobrenome" placeholder="Silva" required />
+        </p>
+        <p>
+          <label for="idemail"> Email: </label>
+          <input
+            type="email"
+            id="idemail"
+            placeholder="maria@silva.com"
+            required
+          />
+        </p>
+        <p>
+          <label for="ididade"> Idade: </label>
+          <input type="number" id="ididade" placeholder="20" required />
+        </p>
+        <p>
+          <label for="idcel"> Contato: </label>
+          <input
+            type="tel"
+            name="cel"
+            id="idcel"
+            placeholder="(xx) xxxxx-xxxx"
+            required
+          />
+        </p>
+        <p>
+          <label for="idcivil"> Estado Civil(opcional):</label>
+          <input
+            type="text"
+            name="nome"
+            id="idcivil"
+            list="idlist"
+            class="input"
+            placeholder="Ex.: Solteiro"
+          />
+          <datalist id="idlist">
+            <option>Casado(a)</option>
+            <option>Solteiro(a)</option>
+            <option>Divorciado(a)</option>
+          </datalist>
+        </p>
+        <button type="submit" onclick="verificaCampo()">Enviar</button>
+      </fieldset>
+      <br />
+    </form>
+
+    <script>
+      let nome = document.getElementById("idnome").value
+      let sobrenome = document.getElementById("idsobrenome").value
+      let email = document.getElementById("idemail").value
+      let idade = document.getElementById("ididade").value
+      let contato = document.getElementById("idcel").value
+      function verificaCampo() {
+        if (
+          nome === "" ||
+          sobrenome === "" ||
+          email === "" ||
+          idade === "" ||
+          contato === ""
+        ) {
+          alert("insira os dados!")
+        } else {
+          alert("enviado com sucesso!")
+        }
+      }
+    </script>
+  </body>
+</html>

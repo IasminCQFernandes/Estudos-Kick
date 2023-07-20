@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+        
+        <div>
+            <ul id="lista"></ul>
+            <button onclick="remove_nome()">Remove nome</button>
+        </div>
+        <script>
+            let nomes = [];
+            let ul = document.getElementById("lista");
+            let max = prompt("Digite o número de nomes para cadastrar: ");
+            // cadastrar os nomes na lista
+            for(let x = 0; x < max; x++){
+                let n = prompt(`Digite o ${x+1}º nome: `);
+                nomes.push(n);
+            }
+            // exibir os nomes cadastrados no HTML
+            for(let x = 0; x < nomes.length; x++){
+                ul.innerHTML += `<li> ${nomes[x]} </li>`;
+            }
+            function remove_nome(){
+                // remove o ultimo nome da lista
+                nomes.pop();
+                // limpa a lista do HTML
+                ul.innerHTML = " ";
+                // atualiza a lista com os nomes restantes
+                for(let x = 0; x < nomes.length; x++){
+                    ul.innerHTML += `<li> ${nomes[x]} </li>`;
+                }
+            }
+        </script>
+    </body>
+</html>
